@@ -16,10 +16,10 @@ Argument Handling Module
 .. autosummary::
    :nosignatures:
 
-   verify_args
+   validate_args
    parse_args
 
-.. autofunction:: verify_args
+.. autofunction:: validate_args
 
 .. autofunction:: parse_args
 
