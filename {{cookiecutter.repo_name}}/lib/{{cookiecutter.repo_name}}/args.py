@@ -45,8 +45,9 @@ def validate_args(args):
     Validate that arguments are valid.
 
     :param args: An arguments namespace.
+    :type args: :py:class:`argparse.Namespace`
     :return: The validated namespace.
-    :rtype: argparse.Namespace
+    :rtype: :py:class:`argparse.Namespace`
     """
     level = V_LEVELS.get(args.verbose, logging.DEBUG)
     logging.basicConfig(format=FORMAT, level=level)
@@ -60,9 +61,10 @@ def parse_args(argv=None):
     """
     Argument parsing routine.
 
-    :param list argv: A list of argument strings.
+    :param argv: A list of argument strings.
+    :rtype argv: list
     :return: A parsed and verified arguments namespace.
-    :rtype: argparse.Namespace
+    :rtype: :py:class:`argparse.Namespace`
     """
     parser = ArgumentParser(
         description='{{ cookiecutter.short_description }}'

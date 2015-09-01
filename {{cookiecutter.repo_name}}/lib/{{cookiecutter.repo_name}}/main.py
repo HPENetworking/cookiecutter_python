@@ -33,7 +33,7 @@ def main(args):
     Application main function.
 
     :param args: An arguments namespace.
-    :type args: argparse.Namespace
+    :type args: :py:class:`argparse.Namespace`
     :return: Exit code.
     :rtype: int
     """
