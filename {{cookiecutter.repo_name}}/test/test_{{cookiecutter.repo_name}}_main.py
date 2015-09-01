@@ -24,7 +24,7 @@ See http://pythontesting.net/framework/pytest/pytest-introduction/#fixtures
 from __future__ import unicode_literals, absolute_import
 from __future__ import print_function, division
 
-import pytest
+import pytest # noqa
 
 from {{ cookiecutter.repo_name }} import args, main
 
@@ -38,5 +38,5 @@ def teardown_module(module):
 
 
 def test_main():
-    arguments = '-v'
+    arguments = ['-v']
     assert main(args.parse_args(arguments)) == 0

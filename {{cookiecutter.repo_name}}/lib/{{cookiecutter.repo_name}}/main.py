@@ -26,7 +26,7 @@ from __future__ import print_function, division
 import logging
 
 
-log = logging.get_logger(__name__)
+log = logging.getLogger(__name__)
 
 
 def main(args):

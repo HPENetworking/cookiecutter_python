@@ -29,7 +29,7 @@ from argparse import ArgumentParser
 from . import __version__
 
 
-log = logging.get_logger(__name__)
+log = logging.getLogger(__name__)
 
 
 FORMAT = '%(asctime)s:::%(levelname)s:::%(message)s'

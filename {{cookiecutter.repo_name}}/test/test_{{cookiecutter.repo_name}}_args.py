@@ -24,7 +24,7 @@ See http://pythontesting.net/framework/pytest/pytest-introduction/#fixtures
 from __future__ import unicode_literals, absolute_import
 from __future__ import print_function, division
 
-import pytest
+import pytest # noqa
 
 from {{ cookiecutter.repo_name }} import args
 
@@ -49,7 +49,4 @@ def test_args():
     assert parsed.verbose == 2
 
     parsed = args.parse_args(['-vvv'])
-    assert parsed.verbose == 3
-
-    parsed = args.parse_args(['-vvvv'])
     assert parsed.verbose == 3
