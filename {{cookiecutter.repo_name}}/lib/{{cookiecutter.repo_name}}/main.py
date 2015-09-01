@@ -38,3 +38,6 @@ def main(args):
     :rtype: int
     """
     return 0
+
+
+__all__ = ['main']
