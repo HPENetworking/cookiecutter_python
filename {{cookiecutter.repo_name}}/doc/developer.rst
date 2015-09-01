@@ -46,10 +46,6 @@ Setup Development Environment
 Building Documentation
 ======================
 
-.. warning::
-
-   Do not forget to exit the development virtual environment before using Tox.
-
 ::
 
    tox -e doc
@@ -70,10 +66,6 @@ So a development web server can serve any location like this:
 
 Running Test Suite
 ==================
-
-.. warning::
-
-   Do not forget to exit the development virtual environment before using Tox.
 
 ::
 
