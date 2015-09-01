@@ -1,6 +1,6 @@
 .. toctree::
 
-.. currentmodule:: template
+.. currentmodule:: {{ cookiecutter.repo_name }}
 
 ================================
 Internal Documentation Reference
