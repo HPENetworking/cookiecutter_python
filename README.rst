@@ -23,8 +23,8 @@ See https://github.com/audreyr/cookiecutter.
 
 - Documentation setup with Sphinx_.
 
-  - Automatic API generation using `autosummary_generate`.
-    Just list new modules in `doc/reference.rst`.
+  - Automatic API generation using ``autosummary_generate``.
+    Just list new modules in ``doc/reference.rst``.
 
 
 Usage
