@@ -1,6 +1,4 @@
 /* Fix Pygments Monokai theme */
-
-/*
 div.highlight {
     border-radius: 5px !important;
 }
@@ -11,4 +9,108 @@ div.highlight, div.highlight pre {
     color: #f8f8f2 !important;
     border: none !important;
 }
-*/
+
+/* Improve autodoc */
+dl.class, dl.function {
+    background: #F9F2F4 !important;
+    background-color: #F9F2F4 !important;
+    padding: 10px 10px 10px 20px !important;
+    border: 1px solid #D3D3D3 !important;
+}
+
+dl.class dt {
+}
+
+dl.class dt code.descclassname {
+    font-size: 70% !important;
+}
+
+dl.class dt em.property {
+    font-size: 120% !important;
+    font-style: normal !important;
+}
+
+dl.class dd dl.attribute em.property {
+    font-size: 100% !important;
+    font-weight: normal !important;
+    font-family: monospace !important;
+}
+
+/* Fix bad dd and dl margin */
+dl dd {
+    margin: 15px 0px 0px 20px !important;
+}
+
+/* Fix local table of contents */
+div.contents {
+    display: inline-block;
+    padding: 15px 25px 10px 15px !important;
+}
+
+/* Prettify documentation tables */
+table.doc-table {
+    width: 50% !important;
+    border: 1px solid lightgray !important;
+}
+
+
+table.doc-table caption:before {
+    content : "Table : " !important;
+}
+
+table.doc-table caption {
+    margin: 5px !important;
+    font-weight: bold !important;
+}
+
+/* Fix figures sub-spaced */
+img.figure {
+    margin: 30px 5px 30px 5px !important;
+}
+
+/* Fix documentation spacing */
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 30px !important;
+}
+
+/* Fix bad lineos formatting */
+.highlighttable .linenos pre,
+.highlighttable .code pre {
+    font-size: 14px !important;
+}
+
+/* Remove unuseful display in reference */
+code.descclassname {
+    display: none;
+}
+
+dl.attribute em.property {
+    display: none;
+}
+
+.float-right {
+    float: right;
+    width: auto !important;
+}
+
+.float-left {
+    float: left;
+    width: auto !important;
+}
+
+.float-center {
+    text-align: center;
+}
+
+/* Improve sections definitions */
+h1, .h1 {
+    font-size: 48px !important;
+}
+
+h2, .h2 {
+    font-size: 34px !important;
+}
+
+h3, .h3 {
+    font-size: 24px !important;
+}

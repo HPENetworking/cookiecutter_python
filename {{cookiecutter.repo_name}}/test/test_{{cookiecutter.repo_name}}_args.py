@@ -24,7 +24,7 @@ See http://pythontesting.net/framework/pytest/pytest-introduction/#fixtures
 from __future__ import unicode_literals, absolute_import
 from __future__ import print_function, division
 
-import pytest # noqa
+import pytest  # noqa
 
 from {{ cookiecutter.repo_name }} import args
 

@@ -2,7 +2,7 @@
    :hidden:
 
    developer
-   internal
+   reference
 
 {{ '=' * cookiecutter.project_name|length }}
 {{ cookiecutter.project_name }}
@@ -20,7 +20,7 @@ Documentation
 =============
 
 - :doc:`Developer Guide. <developer>`
-- :doc:`Internal Documentation Reference. <internal>`
+- :doc:`Internal Documentation Reference. <reference>`
 
 
 Development
