@@ -2,6 +2,9 @@
 cookiecutter-template
 =====================
 
+About
+=====
+
 Cookiecutter template for a Python package.
 
 See https://github.com/audreyr/cookiecutter.
@@ -22,7 +25,7 @@ See https://github.com/audreyr/cookiecutter.
 
 
 Usage
------
+=====
 
 Generate a new Python project using this template:
 
@@ -30,6 +33,15 @@ Generate a new Python project using this template:
 
    pip install cookiecutter
    cookiecutter git@magma-git.austin.hp.com:testing/cookiecutter-template.git
+
+
+Improvements
+============
+
+- Setup Travis CI and Tox integration.
+- Setup Coveralls and Tox integration.
+- Integrate documentation with http://shields.io/
+- Add support for changelog generation using gitchangelog
 
 
 .. _Tox: https://testrun.org/tox/
