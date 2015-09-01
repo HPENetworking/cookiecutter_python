@@ -13,15 +13,21 @@
 # serve to show the default.
 
 import os
-import sys
-from os.path import join, dirname, abspath
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(
-    0, join(dirname(dirname(abspath(__file__))), 'lib')
-)
+#
+# We could add our modules to the PYTHONPATH in this way, but because we use
+# `tox -e doc` to build it the modules are already installed in the virtualenv
+# and thus the availability of the module (and the correct installation) is
+# checked.
+#
+# import sys
+# from os.path import join, dirname, abspath
+# sys.path.insert(
+#     0, join(dirname(dirname(abspath(__file__))), 'lib')
+# )
 
 # -- General configuration ------------------------------------------------
 

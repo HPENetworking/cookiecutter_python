@@ -10,7 +10,7 @@ See https://github.com/audreyr/cookiecutter.
 - Automation setup using Tox_ for Python 2.7 and Python 3.4.
 - Testing setup with pytest_.
 
-  - Includes coverage report.
+  - Generates execution and coverage XML reports.
   - Autodiscovery and execution of doctest_.
 
 - PEP8 compliance checking with Flake8_.

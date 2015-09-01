@@ -12,7 +12,6 @@ doc/_build
 
 # Tox
 .tox/*
-coverage.xml
 
 # Misc
 *~

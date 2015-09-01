@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) {{ cookiecutter.year }} {{ cookiecutter.author }} <{{ cookiecutter.email }}>

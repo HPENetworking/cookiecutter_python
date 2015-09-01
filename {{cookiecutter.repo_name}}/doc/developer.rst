@@ -39,3 +39,13 @@ Setup Development Environment
 
       flake8 --install-hook
       git config flake8.strict true
+
+
+Building Documentation
+======================
+
+::
+
+      tox -e doc
+
+Output will be available at `.tox/doc/tmp/html`.
