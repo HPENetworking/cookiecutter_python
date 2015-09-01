@@ -29,6 +29,7 @@ Setup Development Environment
       cd {{ cookiecutter.repo_name }}
       pip install -r requirements.txt
       pip install -r requirements.dev.txt
+      pip setup.py develop
 
 #. Configure git pre-commit hook:
 
@@ -37,9 +38,17 @@ Setup Development Environment
       flake8 --install-hook
       git config flake8.strict true
 
+.. note::
+
+   To exit the virtual environment issue the `deactivate` command.
+
 
 Building Documentation
 ======================
+
+.. warning::
+
+   Do not forget to exit the development virtual environment before using Tox.
 
 ::
 
@@ -57,3 +66,15 @@ So a development web server can serve any location like this:
 ::
 
    $ webdev .tox/doc/tmp/html
+
+
+Running Test Suite
+==================
+
+.. warning::
+
+   Do not forget to exit the development virtual environment before using Tox.
+
+::
+
+   tox -e py27,py34

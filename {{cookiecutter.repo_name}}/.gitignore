@@ -8,7 +8,8 @@ dist/*
 build/*
 
 # Sphinx
-doc/_build
+doc/_build/*
+doc/_reference/*
 
 # Tox
 .tox/*

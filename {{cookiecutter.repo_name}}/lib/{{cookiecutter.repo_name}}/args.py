@@ -23,7 +23,6 @@ from __future__ import unicode_literals, absolute_import
 from __future__ import print_function, division
 
 import logging
-from argparse import ArgumentParser
 
 from . import __version__
 
@@ -66,6 +65,8 @@ def parse_args(argv=None):
     :return: A parsed and verified arguments namespace.
     :rtype: :py:class:`argparse.Namespace`
     """
+    from argparse import ArgumentParser
+
     parser = ArgumentParser(
         description='{{ cookiecutter.short_description }}'
     )

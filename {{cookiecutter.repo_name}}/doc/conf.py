@@ -309,14 +309,13 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # texinfo_no_detailmenu = False
 
+# Reference stubs generation
+autosummary_generate = True
+
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3.4', None)
 }
-
-# Fix Jenkins fetch issue
-if os.environ.get('JENKINS_URL', None) is None:
-    intersphinx_mapping = {}
 
 # Setup theme if not building in readthedocs.org
 if not on_rtd:
