@@ -4,9 +4,6 @@
 Developer Guide
 ===============
 
-.. contents:: Table of Contents
-   :local:
-
 
 Setup Development Environment
 =============================
