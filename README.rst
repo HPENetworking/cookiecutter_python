@@ -9,18 +9,22 @@ See https://github.com/audreyr/cookiecutter.
 - Open Source license: Apache 2.0.
 - Automation setup using Tox_ for Python 2.7 and Python 3.4.
 - Testing setup with pytest_.
+
   - Includes coverage report.
   - Autodiscovery and execution of doctest_.
+
 - PEP8 compliance checking with Flake8_.
+
   - Includes a git pre-commit hook.
   - Includes configuration using EditorConfig_.
+
 - Documentation setup with Sphinx_.
 
 
 Usage
 -----
 
-Generate a new Python project using this template::
+Generate a new Python project using this template:
 
 ::
 
