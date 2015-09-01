@@ -31,5 +31,10 @@ log = logging.getLogger(__name__)
 def main(args):
     """
     Application main function.
+
+    :param args: An arguments namespace.
+    :type args: argparse.Namespace
+    :return: Exit code.
+    :rtype: int
     """
     return 0

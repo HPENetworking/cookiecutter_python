@@ -72,7 +72,7 @@ setup(
     author_email='{{ cookiecutter.email }}',
     description="{{ cookiecutter.short_description }}",
     long_description=read('README.rst'),
-    url='{{ cookiecutter.url }}',
+    url='{{ cookiecutter.doc_url }}',
     keywords='{{ cookiecutter.repo_name }}',
 
     classifiers=[

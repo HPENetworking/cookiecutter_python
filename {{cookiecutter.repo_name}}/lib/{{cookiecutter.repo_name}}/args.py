@@ -40,9 +40,13 @@ V_LEVELS = {
 }
 
 
-def verify_args(args):
+def validate_args(args):
     """
-    Verify that arguments are valid.
+    Validate that arguments are valid.
+
+    :param args: An arguments namespace.
+    :return: The validated namespace.
+    :rtype: argparse.Namespace
     """
     level = V_LEVELS.get(args.verbose, logging.DEBUG)
     logging.basicConfig(format=FORMAT, level=level)
@@ -56,7 +60,9 @@ def parse_args(argv=None):
     """
     Argument parsing routine.
 
-    :para
+    :param list argv: A list of argument strings.
+    :return: A parsed and verified arguments namespace.
+    :rtype: argparse.Namespace
     """
     parser = ArgumentParser(
         description='{{ cookiecutter.short_description }}'
@@ -74,7 +80,7 @@ def parse_args(argv=None):
     )
 
     args = parser.parse_args(argv)
-    args = verify_args(args)
+    args = validate_args(args)
     return args
 
 

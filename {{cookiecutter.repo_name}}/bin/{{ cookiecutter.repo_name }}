@@ -19,7 +19,7 @@
 """
 {{ cookiecutter.project_name }} executable script.
 
-See {{ cookiecutter.url }}
+See {{ cookiecutter.doc_url }}
 """
 
 import sys

@@ -13,6 +13,7 @@
 # serve to show the default.
 
 import os
+on_rtd = os.environ.get('READTHEDOCS', None) is not None
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -21,13 +22,14 @@ import os
 # We could add our modules to the PYTHONPATH in this way, but because we use
 # `tox -e doc` to build it the modules are already installed in the virtualenv
 # and thus the availability of the module (and the correct installation) is
-# checked.
-#
-# import sys
-# from os.path import join, dirname, abspath
-# sys.path.insert(
-#     0, join(dirname(dirname(abspath(__file__))), 'lib')
-# )
+# checked. The exception is when building directly using sphinx-build, like
+# when pushing in readthedocs.org
+if on_rtd:
+    import sys
+    from os.path import join, dirname, abspath
+    sys.path.insert(
+        0, join(dirname(dirname(abspath(__file__))), 'lib')
+    )
 
 # -- General configuration ------------------------------------------------
 
@@ -122,7 +124,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -160,7 +162,7 @@ html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-# html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = '%Y-%m-%d'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -315,3 +317,9 @@ intersphinx_mapping = {
 # Fix Jenkins fetch issue
 if os.environ.get('JENKINS_URL', None) is None:
     intersphinx_mapping = {}
+
+# Setup theme if not building in readthedocs.org
+if not on_rtd:
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]

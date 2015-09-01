@@ -11,7 +11,6 @@
 .. container:: float-right
 
    .. image:: _static/images/logo.png
-      :scale: 50%
 
 {{ cookiecutter.short_description }}
 
@@ -26,7 +25,7 @@ Documentation
 Development
 ===========
 
-- `Project repository. <{{ cookiecutter.url }}>`_
+- `Project repository. <{{ cookiecutter.repo_url }}>`_
 
 
 License
