@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # {{ cookiecutter.project_name }} documentation build configuration file.
@@ -292,7 +291,7 @@ texinfo_documents = [
         u'{{ cookiecutter.project_name }} Documentation',
         author,
         '{{ cookiecutter.repo_name }}',
-        '{{ cookiecutter.short_description }}',
+        u'{{ cookiecutter.short_description }}',
         'Miscellaneous'
     ),
 ]
