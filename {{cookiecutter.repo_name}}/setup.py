@@ -62,7 +62,6 @@ setup(
     version=find_version('lib/{{ cookiecutter.repo_name }}/__init__.py'),
     package_dir={'': 'lib'},
     packages=find_packages('lib'),
-    scripts=['bin/{{ cookiecutter.repo_name }}'],
 
     # Dependencies
     install_requires=find_requirements('requirements.txt'),

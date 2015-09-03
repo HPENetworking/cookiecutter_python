@@ -16,28 +16,35 @@
 # under the License.
 
 """
-Application entry point module.
+Test suite for module {{ cookiecutter.repo_name }}.
+
+See http://pythontesting.net/framework/pytest/pytest-introduction/#fixtures
 """
 
 from __future__ import unicode_literals, absolute_import
 from __future__ import print_function, division
 
-import logging
+import pytest  # noqa
+
+from {{ cookiecutter.repo_name }} import __version__
 
 
-log = logging.getLogger(__name__)
+def setup_module(module):
+    print('setup_module({})'.format(module.__name__))
 
 
-def main(args):
+def teardown_module(module):
+    print('teardown_module({})'.format(module.__name__))
+
+
+def test_semantic_version():
     """
-    Application main function.
+    Check that version follows the Semantic Versioning 2.0.0 specification.
 
-    :param args: An arguments namespace.
-    :type args: :py:class:`argparse.Namespace`
-    :return: Exit code.
-    :rtype: int
+        http://semver.org/
     """
-    return 0
+    mayor, minor, rev = map(int, __version__.split('.'))
 
-
-__all__ = ['main']
+    assert mayor >= 0
+    assert minor >= 0
+    assert rev >= 0
