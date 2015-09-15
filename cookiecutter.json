@@ -4,7 +4,7 @@
     "repo_url": "https://github.com/theteam/template",
     "doc_url": "https://cookiecutter.readthedocs.org/",
     "project_name": "Python Template",
-    "repo_name": "template",
+    "repo_name": "my_template",
     "short_description": "Python project template for Cookiecutter",
     "year": "2015",
     "version": "0.1.0"
