@@ -25,6 +25,7 @@ See https://github.com/audreyr/cookiecutter.
 
   - Automatic API generation using ``autosummary_generate``.
     Just list new modules in ``doc/reference.rst``.
+  - Built-in support for PlantUML_ diagrams.
 
 
 Usage
@@ -53,3 +54,4 @@ Improvements
 .. _Flake8: https://flake8.readthedocs.org/
 .. _EditorConfig: http://editorconfig.org/
 .. _Sphinx: http://sphinx-doc.org/
+.. _PlantUML: http://plantuml.com/
