@@ -36,7 +36,7 @@ Generate a new Python project using this template:
 ::
 
    pip install cookiecutter
-   cookiecutter git@magma-git.austin.hp.com:testing/cookiecutter-template.git
+   cookiecutter git@github-sc-p.corp.hp.com:TestingGroup/cookiecutter-template.git
 
 
 Improvements
