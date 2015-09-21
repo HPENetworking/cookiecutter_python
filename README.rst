@@ -1,6 +1,6 @@
-=====================
-cookiecutter-template
-=====================
+===================
+cookiecutter-python
+===================
 
 About
 =====
@@ -36,7 +36,7 @@ Generate a new Python project using this template:
 ::
 
    pip install cookiecutter
-   cookiecutter git@github-sc-p.corp.hp.com:TestingGroup/cookiecutter-template.git
+   cookiecutter git@github-sc-p.corp.hp.com:hpe-networking/cookiecutter-python.git
 
 
 Improvements
