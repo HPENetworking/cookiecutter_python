@@ -23,8 +23,7 @@ See https://github.com/audreyr/cookiecutter.
 
 - Documentation setup with Sphinx_.
 
-  - Automatic API generation using ``autosummary_generate``.
-    Just list new modules in ``doc/reference.rst``.
+  - Automatic API generation using AutoAPI_.
   - Built-in support for PlantUML_ diagrams.
 
 
@@ -54,4 +53,5 @@ Improvements
 .. _Flake8: https://flake8.readthedocs.org/
 .. _EditorConfig: http://editorconfig.org/
 .. _Sphinx: http://sphinx-doc.org/
+.. _AutoAPI_: http://autoapi.readthedocs.org/
 .. _PlantUML: http://plantuml.com/

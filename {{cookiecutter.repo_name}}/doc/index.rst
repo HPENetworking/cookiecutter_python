@@ -2,7 +2,7 @@
    :hidden:
 
    developer
-   reference
+   {{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}
 
 {{ '=' * cookiecutter.project_name|length }}
 {{ cookiecutter.project_name }}
@@ -12,14 +12,14 @@
 
    .. image:: _static/images/logo.png
 
-{{ cookiecutter.short_description }}
+{{ cookiecutter.short_description|wordwrap(79) }}
 
 
 Documentation
 =============
 
 - :doc:`Developer Guide. <developer>`
-- :doc:`Internal Documentation Reference. <reference>`
+- :doc:`Internal Documentation Reference. <{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}>`
 
 
 Development

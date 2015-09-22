@@ -2,7 +2,7 @@
 {{ cookiecutter.project_name }}
 {{ '=' * cookiecutter.project_name|length }}
 
-{{ cookiecutter.short_description }}
+{{ cookiecutter.short_description|wordwrap(79) }}
 
 
 Documentation

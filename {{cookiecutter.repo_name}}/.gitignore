@@ -9,7 +9,7 @@ build/*
 
 # Sphinx
 doc/_build/*
-doc/_reference/*
+doc/{{ cookiecutter.repo_name }}/*
 
 # Tox
 .tox/*

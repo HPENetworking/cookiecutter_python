@@ -6,4 +6,4 @@ pytest-cov
 sphinx
 sphinx_rtd_theme
 sphinxcontrib-plantuml
-
+autoapi
