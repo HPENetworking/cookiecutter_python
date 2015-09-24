@@ -26,6 +26,8 @@ See https://github.com/audreyr/cookiecutter.
   - Automatic API generation using AutoAPI_.
   - Built-in support for PlantUML_ diagrams.
 
+- Lightweight Python source distribution for PyPI.
+
 
 Usage
 =====
