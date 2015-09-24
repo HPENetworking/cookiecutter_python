@@ -70,7 +70,9 @@ setup(
     # Metadata
     author='{{ cookiecutter.author }}',
     author_email='{{ cookiecutter.email }}',
-    description='{{ cookiecutter.short_description }}',
+    description=(
+        '{{ cookiecutter.short_description|wordwrap(68, wrapstring=" \'\n\'")|indent(8) }}'
+    ),
     long_description=read('README.rst'),
     url='{{ cookiecutter.doc_url }}',
     keywords='{{ cookiecutter.repo_name }}',

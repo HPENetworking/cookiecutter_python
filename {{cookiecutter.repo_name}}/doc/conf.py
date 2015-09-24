@@ -228,9 +228,11 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', '{{ cookiecutter.repo_name }}.tex',
-     u'{{ cookiecutter.project_name }} Documentation',
-     u'{{ cookiecutter.author }}', 'manual'),
+    (
+        'index', '{{ cookiecutter.repo_name }}.tex',
+        '{{ cookiecutter.project_name }} Documentation',
+        '{{ cookiecutter.author }}', 'manual'
+    ),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -262,7 +264,7 @@ man_pages = [
     (
         'index',
         '{{ cookiecutter.repo_name }}',
-        u'{{ cookiecutter.project_name }} Documentation',
+        '{{ cookiecutter.project_name }} Documentation',
         [author], 1
     ),
 ]
@@ -278,11 +280,14 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (
-        master_doc, '{{ cookiecutter.repo_name }}',
-        u'{{ cookiecutter.project_name }} Documentation',
+        master_doc,
+        '{{ cookiecutter.repo_name }}',
+        '{{ cookiecutter.project_name }} Documentation',
         author,
         '{{ cookiecutter.repo_name }}',
-        u'{{ cookiecutter.short_description }}',
+        (
+            '{{ cookiecutter.short_description|wordwrap(64, wrapstring=" \'\n\'")|indent(12) }}'
+        ),
         'Miscellaneous'
     ),
 ]
@@ -298,6 +303,7 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 # texinfo_no_detailmenu = False
+
 
 # Add style overrides
 def setup(app):
