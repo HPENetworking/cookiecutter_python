@@ -55,5 +55,5 @@ Improvements
 .. _Flake8: https://flake8.readthedocs.org/
 .. _EditorConfig: http://editorconfig.org/
 .. _Sphinx: http://sphinx-doc.org/
-.. _AutoAPI_: http://autoapi.readthedocs.org/
+.. _AutoAPI: http://autoapi.readthedocs.org/
 .. _PlantUML: http://plantuml.com/
