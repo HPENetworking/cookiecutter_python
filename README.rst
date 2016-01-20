@@ -1,11 +1,11 @@
 ===================
-cookiecutter-python
+cookiecutter_python
 ===================
 
 About
 =====
 
-Cookiecutter template for a Python package.
+HPE Python project repository template for Open Source Software.
 
 See https://github.com/audreyr/cookiecutter.
 
@@ -37,7 +37,7 @@ Generate a new Python project using this template:
 ::
 
    pip install cookiecutter
-   cookiecutter git@github-sc-p.corp.hp.com:hpe-networking/cookiecutter-python.git
+   cookiecutter git@github.com:HPENetworking/cookiecutter_python.git
 
 
 Improvements
