@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# {{ cookiecutter.project_name }} documentation build configuration file.
+# {{ '%s documentation build configuration file.'|format(cookiecutter.project_name)|wordwrap(77, wrapstring='\n# ') }}
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
