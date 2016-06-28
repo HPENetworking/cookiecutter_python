@@ -31,7 +31,7 @@ Development
 License
 =======
 
-::
+.. code-block:: text
 
    Copyright (C) {{ cookiecutter.year }} {{ cookiecutter.author }}
 
