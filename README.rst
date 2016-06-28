@@ -24,7 +24,8 @@ See https://github.com/audreyr/cookiecutter.
 - Documentation setup with Sphinx_.
 
   - Automatic API generation using AutoAPI_.
-  - Built-in support for PlantUML_ diagrams.
+  - Built-in support for PlantUML_, Graphviz_ and Ditaa_ diagrams using
+    Plantweb_.
 
 - Lightweight Python source distribution for PyPI.
 
@@ -37,7 +38,7 @@ Generate a new Python project using this template:
 ::
 
    pip install cookiecutter
-   cookiecutter git@github.com:HPENetworking/cookiecutter_python.git
+   cookiecutter https://github.com/HPENetworking/cookiecutter_python.git
 
 
 Improvements
@@ -57,3 +58,6 @@ Improvements
 .. _Sphinx: http://sphinx-doc.org/
 .. _AutoAPI: http://autoapi.readthedocs.org/
 .. _PlantUML: http://plantuml.com/
+.. _Graphviz: http://www.graphviz.org/
+.. _Ditaa: http://ditaa.sourceforge.net/
+.. _Plantweb: https://plantweb.readthedocs.io/

@@ -1,8 +1,22 @@
+########################
+# Coding style         #
+#######################
+
 flake8
 pep8-naming
+
+#######################
+# Testing             #
+#######################
+
 pytest
 pytest-cov
+
+#######################
+# Documentation       #
+#######################
+
 sphinx
-sphinx_rtd_theme
-sphinxcontrib-plantuml
+guzzle_sphinx_theme
 autoapi
+plantweb
