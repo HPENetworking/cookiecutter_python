@@ -33,12 +33,24 @@ See https://github.com/audreyr/cookiecutter.
 Usage
 =====
 
+This repository has two branches:
+
+- ``module``
+- ``executable``
+
+Which branch to use depends on the kind of project you want to create.
+If an executable and a module is needed the use the ``executable`` branch.
+If just a pure Python module is required then use the ``module`` branch.
+
 Generate a new Python project using this template:
 
 ::
 
-   pip install cookiecutter
-   cookiecutter https://github.com/HPENetworking/cookiecutter_python.git
+   pip3 install cookiecutter
+   git clone https://github.com/HPENetworking/cookiecutter_python.git
+   cd cookiecutter_python
+   git checkout <executable or module>
+   cookiecutter .
 
 
 Improvements
