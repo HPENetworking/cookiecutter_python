@@ -11,9 +11,6 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import os
-from os.path import join, dirname, abspath
-
 from guzzle_sphinx_theme import html_theme_path
 
 from {{ cookiecutter.repo_name }} import __version__
