@@ -11,7 +11,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-from guzzle_sphinx_theme import html_theme_path
+from guzzle_sphinx_theme import html_theme_path, HTMLTranslator
 
 from {{ cookiecutter.repo_name }} import __version__
 
@@ -111,7 +111,6 @@ todo_include_todos = False
 # -- Options for HTML output ----------------------------------------------
 
 # Adds an HTML table visitor to apply Bootstrap table classes
-html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
 html_theme = 'guzzle_sphinx_theme'
 
 # Register the theme as an extension to generate a sitemap.xml
@@ -294,6 +293,11 @@ texinfo_documents = [
 # Add style overrides
 def setup(app):
     app.add_stylesheet('styles/custom.css')
+    # Adds an HTML table visitor to apply Bootstrap table classes
+    app.set_translator(
+        'guzzle_sphinx_theme.HTMLTranslator', HTMLTranslator
+    )
+
 
 # autoapi configuration
 autoapi_modules = {
